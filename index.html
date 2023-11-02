@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+    <div id="h">
+    <a href="#" class="logo">Logo</a>
+<ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li class=""><a href="#">Service</a></li>
+    <li class=""><a href="#">About</a></li>
+    <li class=""><a href="#">Contact</a></li>
+</ul>
+</div>
+
+    <div class="wrapper">
+<header>
+    <img src="man.png" alt="" class="background" id="man">
+    <img src="monutain_02.png" alt="" class="foreground">
+    <img src="trees_02.png" class="treesleft" id="treesleft">
+    <img src="monutain_01.png" class="mountain1"  id="mountain">
+    <img src="trees_01.png" class="mountain1">
+</header>
+<h1 class="title" id="title">Adventure</h1>
+<span id="time">Time</span>
+</div>
+
+<section class="line">
+    <h1 class="welcome">Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae est modi nostrum officia sunt quisquam perspiciatis dolorem quaerat. Neque odit, distinctio magnam cumque porro voluptates nemo architecto in harum totam ea quaerat ipsa unde tempora ut esse id, repellendus incidunt ipsum provident modi. Animi, libero dicta. Aut eligendi soluta quisquam quod alias impedit eius totam eaque quasi molestias, atque saepe explicabo minus aspernatur, provident omnis quaerat tenetur itaque nobis cumque optio ut maiores ullam quibusdam? Ea incidunt impedit dignissimos adipisci, non eveniet at voluptas perferendis, corporis voluptatum vel. Debitis distinctio reiciendis hic perferendis, dolor sint praesentium animi suscipit recusandae soluta, minus asperiores dicta, rerum omnis. Fugiat id corrupti repudiandae nesciunt aperiam quos maxime, nobis odio ullam accusantium, illum voluptas eaque. Eligendi rerum repudiandae eius magni consequuntur, asperiores temporibus. Ea molestias soluta adipisci ex voluptates debitis et! Facilis fugiat accusantium eius voluptatibus, quod optio, ex eum neque accusamus pariatur voluptatem temporibus dicta recusandae expedita earum necessitatibus molestias laudantium. Dolore sapiente id voluptatum nostrum. Qui earum, suscipit quam, ea laudantium quae eos repellat numquam ipsum nostrum voluptates totam harum fugiat culpa magnam impedit aperiam. Quod hic, deserunt maxime, repellat alias architecto pariatur eum quisquam, officia suscipit inventore recusandae. Molestias accusantium eum in dolor! Perspiciatis, vel nulla mollitia exercitationem fugit ab modi corporis, optio assumenda omnis, voluptas laborum vero alias officiis recusandae illo maxime officia impedit at eos porro. Non voluptas animi vel fuga, vero dignissimos officia illo officiis voluptatibus sunt ipsam velit! Recusandae adipisci quo qui, vitae pariatur voluptatum eaque quaerat magnam nostrum voluptatibus consequuntur amet blanditiis. Incidunt laudantium iusto quibusdam accusamus quisquam at nihil delectus tempore repudiandae hic! Assumenda, esse sapiente! Earum fugit quidem ad, non tempore unde recusandae voluptate esse ea vero, consequuntur velit fuga modi eum doloribus a eius iste nisi, necessitatibus officiis deserunt atque tenetur! Minima, recusandae eligendi!</p></section>
+
+<script>
+    let title = document.getElementById('title');
+    let time = document.getElementById('time');
+    let mountain = document.getElementById('mountain');
+    let treesleft = document.getElementById('treesleft');
+    let man = document.getElementById('man');
+
+    window.addEventListener("scroll",function() {
+        let value = window.scrollY;
+       
+        title.style.right = value * 3 + 'px';
+        time.style.left = value * 5 + 'px';
+        mountain.style.left = (value/9 * 0.4) + '%';
+        treesleft.style.left = -(value/8 * 0.4 ) + '%';
+   })
+</script>
+</body>
+</html>
